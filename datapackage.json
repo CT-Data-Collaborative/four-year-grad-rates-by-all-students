@@ -1,0 +1,133 @@
+{
+  "name": "four-year-grad-rates-by-all-students",
+  "datapackage_version": "1.0-beta.18",
+  "title": "Four-Year-Grad-Rates-by-All-Students",
+  "description": "Four-Year Graduation Rate reports 'graduation' counts and rates and 'still enrolled' counts and rates for both graduates and non-graduates, per subgroup.",
+  "version": "1.0",
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [{
+    "name": "ctsde",
+    "web": ""
+  }],
+  "author":[{
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
+    "web": "http://ctdata.org"
+  }],
+  "contributor": [],
+  "resources": [{
+    "path": "data/data.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "District",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "FIPS",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Year",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Measure Type",
+          "type": "string",
+          "dimension": true
+        }, {
+          "name": "Variable",
+          "type": "string",
+          "dimension": true
+        }, {
+          "name": "Value",
+          "type": "number",
+          "dimension": false
+        }]
+      }
+    }
+  ],
+  "last_modified": "03/22/2017",
+  "ckan_extras": {
+    "full_description": {
+      "ckan_name": "Full Description",
+      "value": "The Connecticut Department of Education (CSDE) introduced the four‐year cohort graduation rate with the graduating class of 2009. This approach was created when Connecticut and 49 other states signed an agreement with the National Governors’ Association to develop a uniform system for tracking students. The CSDE is required to report Cohort Graduation Rates per the No Child Left Behind Act (NCLB) and in compliance reports such as EdFacts and the Consolidated State Performance Report. The cohort graduation rate is also a component of Connecticut’s new accountability system described in CSDE’s approved NCLB flexibility request (or waiver). Four-Year Graduation Rate is the percentage of students who received a standard diploma within four years, including early and summer graduates from the cohort. Four-Year Still Enrolled Rate is the percentage of students who were still in school after four years. Other Rate is the percentage of students who dropped out (including those who enrolled in an adult education program) OR transferred to postsecondary education OR transferred to another school district but never enrolled in that district OR have an unknown status. A student who is eligible for free/reduced price meals or is an English learner or a student with a disability is included in the 'High Needs' subgroup category. Charter Districts have been entered as individual districts.",
+      "type": "string"
+    },
+    "suppression": {
+      "ckan_name": "Suppression",
+      "value": "",
+      "type": "string"
+    },
+    "technical_notes": {
+      "ckan_name": "Technical Notes",
+      "value": "",
+      "type": "string"
+    },
+    "socrata": {
+      "ckan_name": "Socrata",
+      "value": "False",,
+      "type": "string"
+    },
+    "socrata_url": {
+      "ckan_name": "Socrata Dataset URL",
+      "value": "",,
+      "type": "string"
+    },
+    "domain": {
+      "ckan_name": "Domain",
+      "value": "Education",
+      "type": "string"
+    },
+    "subdomain": {
+      "ckan_name": "Subdomain",
+      "value": "Educational Attainment",
+      "type": "string"
+    },
+    "geography": {
+      "ckan_name": "Geography",
+      "value": "District",
+      "type": "string",
+      "constraints": {"enum": ["Town", "County", "Town/County", "District", "Other"]}
+    },
+    "frequency": {
+      "ckan_name": "Frequency",
+      "value": "Annual",
+      "type": "string"
+    },
+    "years_in_catalog": {
+      "ckan_name": "Years in Catalog",
+      "value": [],
+      "type": "array"
+    },
+    "latest_year": {
+      "ckan_name": "Latest Year Available",
+      "value": "2014-2015",
+      "type": "string"
+    },
+    "disabled_views": {
+      "ckan_name": "Disabled Views",
+      "value": [],
+      "type": "array",
+      "constraints": {"enum": ["map", "table", "bar", "line"]}
+    },
+    "units": {
+      "ckan_name": "Units",
+      "value": {
+        "Number": "",
+        "Percent": "%"
+      }
+    },
+    "default": {}
+  },
+  "spot_checks": [],
+  "dimension_groups": [
+    {"Measure Type": []},
+    {"Variable": []}
+  ]
+}
