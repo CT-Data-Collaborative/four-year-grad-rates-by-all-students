@@ -1,7 +1,7 @@
 {
   "name": "four-year-grad-rates-by-all-students",
   "datapackage_version": "1.0-beta.18",
-  "title": "Four Year Grad Rates by All Students",
+  "title": "Four Year Cohort Graduation Rates by All Students",
   "description": "Four-Year Graduation Rate reports 'graduation' counts and rates and 'still enrolled' counts and rates for both graduates and non-graduates, per subgroup.",
   "version": "1.0",
   "licenses": [{
