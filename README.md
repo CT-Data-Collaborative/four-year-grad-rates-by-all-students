@@ -1,7 +1,10 @@
 Four-Year-Grad-Rates-by-All-Students
 
 [![Build Status](https://travis-ci.org/CT-Data-Collaborative/four-year-grad-rates-by-all-students.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/four-year-grad-rates-by-all-students)
-A short description of the project.
+
+Four-Year Graduation Rate reports 'graduation' counts and rates and 'still enrolled' counts and rates for both graduates and non-graduates, per subgroup.
+
+Data Source: <http://edsight.ct.gov/>
 
 ## License MIT
 
