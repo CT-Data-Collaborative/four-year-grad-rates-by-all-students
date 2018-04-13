@@ -2,7 +2,7 @@
   "name": "four-year-grad-rates-by-all-students",
   "datapackage_version": "1.0-beta.18",
   "title": "Four Year Cohort Graduation Rates by All Students",
-  "description": "Four-Year Graduation Rate reports 'graduation' counts and rates and 'still enrolled' counts and rates for both graduates and non-graduates, per subgroup.",
+  "description": "Four-Year Graduation Rate reports 'graduation' counts and rates and 'still enrolled' counts and rates for both graduates and non-graduates, for all students.",
   "version": "1.0",
   "licenses": [{
     "url": "http://opendatacommons.org/licenses/pddl/",
@@ -21,7 +21,7 @@
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/four_year_grad_rate_all_students_2011-2016.csv",
+    "path": "data/four_year_grad_rate_all_students_2011-2017.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -69,7 +69,7 @@
       }
     }
   ],
-  "last_modified": "09/18/2017",
+  "last_modified": "04/13/2018",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -78,7 +78,7 @@
     },
     "suppression": {
       "ckan_name": "Suppression",
-      "value": "",
+      "value": "Disaggregations where either the numerator is less than 6 or the denominator is less than 20 are suppressed.",
       "type": "string"
     },
     "technical_notes": {
@@ -106,6 +106,16 @@
       "value": "Educational Attainment",
       "type": "string"
     },
+    "numerator": {
+      "ckan_name": "Numerator",
+      "value": "For Four Year Graduation Rate, the numerator is Four Year Graduation Count, per subgroup. For Still Enrolled After Four Years Rate, the numerator is Still Enrolled After Four Years Count, per subgroup. For Other Rate, the numerator is Other Count, per subgroup.",
+      "type": "string"
+    },
+    "denominator": {
+      "ckan_name": "Denominator",
+      "value": "Total Cohort Count, per subgroup.",
+      "type": "string"
+    },    
     "geography": {
       "ckan_name": "Geography",
       "value": "District",
@@ -119,12 +129,12 @@
     },
     "years_in_catalog": {
       "ckan_name": "Years in Catalog",
-      "value": ["2010-2011", "2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016"],
+      "value": ["2010-2011", "2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "2015-2016",
+      "value": "2016-2017",
       "type": "string"
     },
     "disabled_views": {
@@ -150,7 +160,7 @@
 			"value": {
 				"Measure Type": "Number",
 		 		"District": "Connecticut",
-		 		"Year": ["2015-2016"],
+		 		"Year": ["2016-2017"],
 		 		"Variable": "Total Cohort Count"
 			},
 		  	"type": "object"
