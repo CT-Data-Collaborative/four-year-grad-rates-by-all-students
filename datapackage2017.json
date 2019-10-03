@@ -15,13 +15,13 @@
     "web": ""
   }],
   "author":[{
-    "name": "Connecticut Data Collaborative",
-    "email": "info@ctdata.org",
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
     "web": "http://ctdata.org"
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/four_year_grad_rate_all_students_2011-2018.csv",
+    "path": "data/four_year_grad_rate_all_students_2011-2017.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -69,7 +69,7 @@
       }
     }
   ],
-  "last_modified": "10/03/2019",
+  "last_modified": "04/13/2018",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -129,12 +129,12 @@
     },
     "years_in_catalog": {
       "ckan_name": "Years in Catalog",
-      "value": ["2010-2011", "2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017", "2017-2018"],
+      "value": ["2010-2011", "2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "2017-2018",
+      "value": "2016-2017",
       "type": "string"
     },
     "disabled_views": {
@@ -160,7 +160,7 @@
 			"value": {
 				"Measure Type": "Number",
 		 		"District": "Connecticut",
-		 		"Year": ["2017-2018"],
+		 		"Year": ["2016-2017"],
 		 		"Variable": "Total Cohort Count"
 			},
 		  	"type": "object"

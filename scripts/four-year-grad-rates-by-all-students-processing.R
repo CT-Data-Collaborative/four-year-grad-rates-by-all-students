@@ -46,6 +46,8 @@ for (i in 1:length(four_yr_gr_grad_dist_noTrend)) {
   four_yr_gr_grad_dist <- rbind(four_yr_gr_grad_dist, current_file)
 }
 
+
+
 #Nongrads District
 four_yr_gr_nongrad_dist <- data.frame(stringsAsFactors = F)
 four_yr_gr_nongrad_dist_noTrend <- grep("trend", all_nongrad_dist_csvs, value=T, invert=T)
@@ -120,6 +122,12 @@ four_yr_gr_nongrad <- rbind(four_yr_gr_nongrad_dist, four_yr_gr_nongrad_state)
 
 four_yr_gr <- merge(four_yr_gr_grad, four_yr_gr_nongrad, by = c("District", "Year", "Total Cohort Count"))
 
+# In 2018 some school districts were renamed. Change values back to 2017 values to stay consistent
+four_yr_gr$District[four_yr_gr$District == "The Woodstock Academy District"] <- "Woodstock Academy District"
+four_yr_gr$District[four_yr_gr$District == "Achievement First Hartford Academy District"] <- "Achievement First Hartford Academy Inc. District"
+four_yr_gr$District[four_yr_gr$District == "Achievement First Bridgeport Academy District"] <- "Bridgeport Achievement First District"
+four_yr_gr$District[four_yr_gr$District == "Capital Preparatory Harbor School District"] <- "Capital Preparatory Harbor School Inc. District"
+
 #backfill Districts
 district_dp_URL <- 'https://raw.githubusercontent.com/CT-Data-Collaborative/ct-school-district-list/master/datapackage.json'
 district_dp <- datapkg_read(path = district_dp_URL)
@@ -138,7 +146,8 @@ years <- c("2010-2011",
            "2013-2014",
            "2014-2015", 
            "2015-2016", 
-           "2016-2017")
+           "2016-2017",
+           "2017-2018")
 
 backfill_years <- expand.grid(
   `FixedDistrict` = unique(districts$`FixedDistrict`),
@@ -214,7 +223,7 @@ test2<-test[duplicated(test), ]
 #Write CSV
 write.table(
   complete_four_yr_gr_long,
-  file.path(path_to_top_level, "data", "four_year_grad_rate_all_students_2011-2017.csv"),
+  file.path(path_to_top_level, "data", "four_year_grad_rate_all_students_2011-2018.csv"),
   sep = ",",
   row.names = F
 )
