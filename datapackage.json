@@ -158,10 +158,10 @@
     "default": {      
       "ckan_name": "Default",
 			"value": {
-				"Measure Type": "Number",
+				"Measure Type": "Percent",
 		 		"District": "Connecticut",
 		 		"Year": ["2018-2019"],
-		 		"Variable": "Total Cohort Count"
+		 		"Variable": "Four Year Graduation Rate"
 			},
 		  	"type": "object"
     }  
